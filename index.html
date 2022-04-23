@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+    
     <title>Document</title>
 </head>
 <body>
@@ -13,19 +15,28 @@
         <h1>Weather Dashboard</h1>
     </header>
       <div class="input-group mb-3">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Search Weather</button>
+        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Search City</button>
         <input id='firstInput' type="text" class="form-control" placeholder="Type city here" aria-label="Example text with button addon" aria-describedby="button-addon1">
       </div>
-
+      <div class="flex-container" id="pastCityData">
+        <div id="firstSearched"></div>
+        <div></div>
+        <div></div>
+        <div></div> 
+        <div></div>  
+      </div>
+      
+    </div>
       <div class="jumbotron jumbotron-fluid"id="mainJumbotron">
         <div class="container">
           <h1 class="display-4" id="city">Weather</h1>
+          <img id="weatherimage"></img>
           <div class="row">
   
             <div class="col-6 col-sm-4"id="temp">Temperature: </div>        
             <div class="col-6 col-sm-4" id="description">Windspeed: </div>
             <div class="col-6 col-sm-4" id="humidity">Humidity: </div>
-            <div class="col-6 col-sm-4" id="uvi">UVI: </div>
+            <div class="col-6 col-sm-4" id="uvi">UV Index: </div>
           </div>
         </div>
       </div>
@@ -36,6 +47,8 @@
             <div class='column'>
               <div class='blue-column'>
                <div id="date1">Future Date</div> 
+               <img id="weathericon1"></img>
+               <div id="description2"></div>
                <div id="temp2">Temperature:</div>
                <div id="windspeed2">Windspeed:</div>
                <div id="humidity2">Humidity:</div>
@@ -44,6 +57,8 @@
             <div class='column'>
               <div class='green-column'>
                 <div id="date2">Future Date</div> 
+                <img id="weathericon2"></img>
+                <div id="description3"></div>
                <div id="temp3">Temperature:</div>
                <div id="windspeed3">Windspeed:</div>
                <div id="humidity3">Humidity:</div>
@@ -52,6 +67,8 @@
             <div class='column'>
               <div class='orange-column'>
                 <div id="date3">Future Date</div> 
+                <img id="weathericon3"></img>
+                <div id="description4"></div>
                <div id="temp4">Temperature:</div>
                <div id="windspeed4">Windspeed:</div>
                <div id="humidity4">Humidity:</div>
@@ -60,6 +77,8 @@
               <div class='column'>
                 <div class='orange-column'>
                   <div id="date4">Future Date</div> 
+                  <img id="weathericon4"></img>
+                  <div id="description5"></div>
                <div id="temp5">Temperature:</div>
                <div id="windspeed5">Windspeed:</div>
                <div id="humidity5">Humidity:</div>
@@ -68,6 +87,8 @@
             <div class='column'>
               <div class='orange-column'>
                 <div id="date5">Future Date</div> 
+                <img id="weathericon5"></img>
+                <div id="description6"></div>
                 <div id="temp6">Temperature:</div>
                 <div id="windspeed6">Windspeed:</div>
                 <div id="humidity6">Humidity:</div>
